@@ -13,7 +13,6 @@ public class MOTDHandler {
     ░▒█▄▄█░▀▀▀░▀▀░▀░░░▀▀▀░▀░░▀░░▀▀░
      */
 
-
     private Component minides(String text) {
         return ChatUtils.minides(text);
     }

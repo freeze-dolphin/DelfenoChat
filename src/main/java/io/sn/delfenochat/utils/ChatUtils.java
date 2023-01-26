@@ -80,9 +80,9 @@ public class ChatUtils {
             return MiniMessage.miniMessage().deserialize(
                     "<rainbow>" + text.substring(1) + "</rainbow>").toString();
         } else if (text.startsWith(",")) {
-            return text;
+            return text.substring(1);
         } else {
-            return "{#74ebd5>}" + text.substring(1) + "{#acb6e5<}";
+            return "{#74ebd5>}" + text + "{#acb6e5<}";
         }
     }
 }
