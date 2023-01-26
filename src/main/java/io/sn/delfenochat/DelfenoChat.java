@@ -6,6 +6,8 @@ import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.plugin.Plugin;
 import com.velocitypowered.api.proxy.ProxyServer;
 import io.sn.delfenochat.listeners.ChatHandler;
+import io.sn.delfenochat.listeners.MOTDHandler;
+import net.sourceforge.pinyin4j.PinyinHelper;
 import org.slf4j.Logger;
 
 @Plugin(
@@ -24,6 +26,7 @@ public class DelfenoChat {
 
     @Subscribe
     public void onProxyInitialization(ProxyInitializeEvent event) {
+        server.getEventManager().register(this, new MOTDHandler());
         server.getEventManager().register(this, new ChatHandler());
     }
 }
