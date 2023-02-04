@@ -19,7 +19,7 @@ public class MOTDHandler {
 
     @Subscribe
     public void onJoin(LoginEvent evt) {
-        Component motd = minides("<newline><st>                               <newline><newline>")
+        Component motd = minides("<newline><st>                                           <newline><newline>")
                 .append(minides("<gradient:green:blue>░▒█▀▀▄░█▀▀░█░░█▀▀░█▀▀░█▀▀▄░▄▀▀▄</gradient><newline>"))
                 .append(minides("<gradient:green:blue>░▒█░▒█░█▀▀░█░░█▀░░█▀▀░█░▒█░█░░█</gradient><newline>"))
                 .append(minides("<gradient:green:blue>░▒█▄▄█░▀▀▀░▀▀░▀░░░▀▀▀░▀░░▀░░▀▀░</gradient><newline><newline>"))
@@ -27,7 +27,7 @@ public class MOTDHandler {
                         "    <rainbow>Chat Reinforcer</rainbow><newline>" +
                                 "    <rainbow:!2>Composed by Freeze_Dolphin</rainbow><newline>" +
                                 "    <rainbow:2>Powered by MiniChat</rainbow> <dark_gray>[<gray>AdventureApi<dark_gray>]<newline>"))
-                .append(minides("<newline><st>                               <newline>"))
+                .append(minides("<newline><st>                                           <newline>"))
                 .append(minides("<newline>" +
                         " <gold><bold>食用方法:<newline>" +
                         " <gold> - <yellow>默认聊天是渐变彩色的<newline>" +

@@ -5,9 +5,7 @@ import com.velocitypowered.api.event.command.CommandExecuteEvent;
 import com.velocitypowered.api.event.player.PlayerChatEvent;
 import io.sn.delfenochat.utils.ChatUtils;
 import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.title.Title;
-import net.kyori.adventure.util.RGBLike;
 import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination;
 
 import java.io.IOException;
